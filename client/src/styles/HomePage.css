@@ -1,0 +1,150 @@
+.banner-img {
+  margin-top: 70px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+}
+
+.home-page h1 {
+  color: #0f172a;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+/* Keep Bootstrap's `.row` layout intact (don't override with flex here) */
+.home-page {
+  align-items: flex-start;
+}
+
+/* Make sure the two columns can shrink instead of pushing the row to wrap */
+.home-page > .col-md-3,
+.home-page > .col-md-9 {
+  min-width: 0;
+}
+
+/* Space between product cards in the flex-wrap container */
+.home-page .col-md-9 .d-flex.flex-wrap {
+  gap: 16px;
+}
+
+.home-page .card {
+  background-color: #ffffff;
+  /* Allow wrapping without forcing the entire grid to overflow */
+  flex: 1 1 18rem;
+  max-width: 18rem;
+  min-width: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s;
+}
+
+.home-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 60px rgba(15, 23, 42, 0.35);
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .card-price {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.home-page button {
+  width: 100%;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+}
+
+.home-page .btn-info {
+  background: rgba(59, 130, 246, 0.1);
+  color: #1d4ed8;
+}
+
+.home-page .btn-info:hover {
+  background: rgba(59, 130, 246, 0.16);
+}
+
+.home-page .btn-dark {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+}
+
+.home-page .btn-dark:hover {
+  filter: brightness(1.04);
+}
+
+.home-page .card-text {
+  color: #4b5563;
+  font-size: 14px;
+}
+
+.home-page .card img {
+  transition: transform 0.2s ease;
+}
+
+.home-page .card img:hover {
+  transform: scale(1.02);
+}
+
+.home-page .card-img-top {
+  height: 260px !important;
+  object-fit: cover;
+}
+
+/* ==================
+filters
+============== */
+.filters h4 {
+  margin-top: 0;
+  color: #111827 !important;
+  border-bottom: 1px solid rgba(209, 213, 219, 0.9);
+  padding-bottom: 10px;
+}
+
+.filters {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+.filters button {
+  background: linear-gradient(135deg, #0ea5e9, #22c55e);
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.loadmore {
+  color: #0ea5e9;
+  font-weight: 600;
+  font-size: 18px !important;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  padding-inline: 28px;
+}
